@@ -1,0 +1,13 @@
+.back{
+    height: 100vh;
+}
+
+.upper-bar{
+    height: 15vh;
+    background-color: rgb(39, 126, 66);
+}
+
+.bg-back{
+    height: 85vh;
+    background-color: azure;
+}
