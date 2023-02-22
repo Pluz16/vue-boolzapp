@@ -1,7 +1,106 @@
-main{
-    width: 70vw;
-    height: 90vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #D9DBD5;
+}
+
+#background_app {
+    width: 100%;
+    height: 100%;
+}
+
+#banner_top {
+    width: 100%;
+    height: 120px;
+    background-color: #009688;
+}
+
+#window_app {
+    position: absolute;
+    width: 80%;
+    height: 95%;
+    top: 2.5%;
+    left: 10%;
+}
+
+#info_float {
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color: green;
+}
+
+#info_float #info_user {
+    width: 100%;
+    height: 60px;
+    background-color: red;
+}
+
+#info_float #notifications {
+    width: 100%;
+    height: 70px;
+    background-color: blue;
+}
+
+#info_float input{
+    display: flex;
+    width: 95%;
+    padding: 5px;
+    margin: 5px auto;
+    border-radius: 20px;
+}
+
+#info_float #name_contacts {
+    width: 100%;
+    height: calc(100% - 170px);
+    background-color:cornflowerblue;
+}
+
+#chat_float {
+    height: 100%;
+    background-color: rebeccapurple;
+}
+
+#chat_float #info_contact {
+    width: 100%;
+    height: 60px;
+    background-color: yellow;
+}
+
+#chat_float #chat_window {
+    width: 100%;
+    height: calc(100% - 130px);
+    background-color: yellowgreen;
+}
+
+#chat_float #input_user_chat {
+    width: 100%;
+    height: 7s0px;
+    background-color: teal;
+
+}
+
+#chat_float #input_user_chat input {
+    display: flex;
+    width: 50%;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+
+
+
 
 
 
