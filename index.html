@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://kit.fontawesome.com/30410f2966.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -23,22 +24,17 @@
         </div>
         <div id="window_app">
 
-            <div id="info_float">
+            <div id="info_float" class="float-lt">
 
-                <div id="info_user"></div>
+                <div id="info_user" class="flex between">
 
-                <div id="notifications"></div>
+                    <div id="user_logo"></div>
 
-                <div>
-                    <input type="text" v-model>
-                </div>
-
-                <div id="name_contacts">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-
+                    <form id="option_user" class="flex middle around">
+                        <button><i class="fas fa-circle-notch"></i></button>
+                        <button><i class="fas fa-comment-alt"></i></button>
+                        <button><i class="fas fa-ellipsis-v"></i></button>
+                    </form>
             </div>
 
             <div id="chat_float">
