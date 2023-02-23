@@ -14,7 +14,7 @@
 
 
 
-.float-lt {
+.float{
     float: left;
 }
 
@@ -48,7 +48,11 @@
 }
 
 .end {
-    justify-content: flex-end;
+    align-self: end;
+}
+
+.none  {
+    list-style: none;
 }
 
 .top {
