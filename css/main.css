@@ -107,40 +107,74 @@ body {
 
 #info_float #name_contacts {
     width: 100%;
-    height: calc(100% - 170px);
-    background-color:cornflowerblue;
+    height: calc(100% - 180px);
+    background-color: #FFFFFF;
+    overflow-y: scroll;
+}
+
+#info_float #name_contacts ul li {
+    list-style: none;
 }
 
 #chat_float {
+    width: 60%;
     height: 100%;
-    background-color: rebeccapurple;
 }
 
-#chat_float #info_contact {
+#chat_float #info_chat {
     width: 100%;
     height: 60px;
-    background-color: yellow;
+    background-color: #EDEDED;
 }
 
 #chat_float #chat_window {
     width: 100%;
-    height: calc(100% - 130px);
-    background-color: yellowgreen;
+    height: calc(100% - 110px);
+    background-image: url("../img/background_chat.png");
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: cover;
+    overflow-y: scroll;
 }
 
 #chat_float #input_user_chat {
     width: 100%;
-    height: 7s0px;
-    background-color: teal;
+    height: 60px;
+    background-color: #F0F0F0;
+    border: 1px solid #E5E5E6;
 
 }
 
+#chat_float #input_user_chat #emojy,
+#chat_float #input_user_chat #vocal_chat {
+    width: 10%;
+}
+
+#chat_float #input_user_chat #emojy button,
+#chat_float #input_user_chat #vocal_chat button,
+#info_float #info_user #option_user button,
+#chat_float #info_chat #option_chat button{
+    font-size: 1.2em;
+    border: none;
+    background-color: #F0F0F0;
+    color: rgb(187, 182, 182);
+    margin: 7px;
+    padding: 5px;
+}
+
+#chat_float #input_user_chat #emojy button,
+#chat_float #input_user_chat #vocal_chat button{
+    font-size: 1.5em;
+    color: rgb(150, 146, 146);
+}
+
 #chat_float #input_user_chat input {
-    display: flex;
-    width: 50%;
-    padding: 15px;
-    margin: 10px auto;
+    width: 80%;
+    height: 70%;
+    padding: 5px;
     border-radius: 5px;
+    font-size: 15px;
+    border: none
 }
 
 
