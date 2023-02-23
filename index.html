@@ -37,17 +37,51 @@
                     </form>
             </div>
 
-            <div id="chat_float">
+            <div id="notifications" class="flex middle">
+                <div id="circle_notification" class="flex middle center">
+                    <i class="fas fa-bell-slash"></i>
+                </div>
+                <div id="notification_text">
+                    <div>
+                        Ricevi notifiche di nuovi messaggi
+                    </div>
+                    <a href="https://faq.whatsapp.com/android/chats/how-to-manage-your-notifications/?lang=it">Attiva notifiche desktop</a>
+                </div>
 
-                <div id="info_contact"></div>
+            </div>
+
+            <form id="search_input" class="flex center middle">
+                <button><i class="fas fa-search"></i></button>
+                <input type="search" placeholder="Cerca o inizia una nuova chat" >
+            </form>
+
+            <div id="chat_float" class="float-lt">
+
+                <div id="info_chat" class="flex between">
+
+                    <div id="contact_logo"></div>
+
+                    <form id="option_chat" class="flex middle around">
+                        <button><i class="fas fa-search"></i></button>
+                        <button><i class="fas fa-paperclip"></i></button>
+                        <button><i class="fas fa-ellipsis-v"></i></button>
+                    </form>
+
+                </div>
 
                 <div id="chat_window"></div>
 
-                <div id="input_user_chat">
-                    <div id="list_emojy"></div>
-                    <input type="text">
-                    <div id="vocal_chat"></div>
-                </div>
+                <div id="input_user_chat" class="flex around middle">
+
+                    <form id="emojy" class="flex center">
+                        <button><i class="far fa-smile"></i></button>
+                    </form>
+
+                    <input type="text" placeholder="Scrivi un messaggio">
+
+                    <form id="vocal_chat" class="flex center"s>
+                        <button><i class="fas fa-microphone"></i></i></button>
+                    </form>
 
             </div>
 
@@ -58,6 +92,7 @@
     </div>
 
     <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
 

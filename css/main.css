@@ -34,30 +34,75 @@ body {
 }
 
 #info_float {
-    float: left;
+    /* float: left; */
     width: 40%;
     height: 100%;
-    background-color: green;
+    background-color: #F6F6F6;
 }
 
 #info_float #info_user {
     width: 100%;
     height: 60px;
-    background-color: red;
+    background-color: #EDEDED;
+    border-right: 1px solid #E5E5E6;
+}
+
+#info_float #info_user #user_logo,
+#chat_float #info_chat #contact_logo {
+    height: 100%;
+}
+
+#info_float #info_user #option_user,
+#chat_float #info_chat #option_chat{
+    height: 100%;
+    margin-right: 15px;
 }
 
 #info_float #notifications {
     width: 100%;
-    height: 70px;
-    background-color: blue;
+    height: 80px;
+    background-color: #9DE1FE;
 }
 
-#info_float input{
-    display: flex;
-    width: 95%;
+#info_float #notifications #circle_notification {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px 10px 20px;
+    color: #9DE1FE;
+    background-color: white;
+}
+
+#info_float #notifications #circle_notification i {
+    font-size: 1.2em;
+}
+
+#info_float #notifications #notification_text a{
+    color: grey;
+    font-size: 0.9em;
+}
+
+#info_float #search_input {
+    width: 100%;
+    height: 50px;
     padding: 5px;
-    margin: 5px auto;
-    border-radius: 20px;
+    /* margin: 5px auto;
+    border-radius: 20px; */
+}
+
+#info_float #search_input button {
+    padding: 10px 20px;
+    border: 1px solid #e5e5e6;
+    background-color: #FFFFFF;
+    border-radius: 5px 0 0 5px;
+    color: grey;
+}
+
+#info_float #search_input input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #E5E5E6;
 }
 
 #info_float #name_contacts {
