@@ -9,6 +9,11 @@ body {
     overflow: hidden;
 }
 
+body {
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+
 .container {
     width: 100%;
     height: 100vh;
@@ -21,8 +26,6 @@ body {
     background: linear-gradient(to bottom, #009688 0px, #009688 15vh, #D9DBD5 15vh, #D9DBD5 100%);
 }
 
-
-
 #window_app {
     position: absolute;
     width: 80%;
@@ -32,7 +35,6 @@ body {
 }
 
 #info_float {
-    /* float: left; */
     width: 40%;
     height: 100%;
     background-color: #F6F6F6;
@@ -60,7 +62,7 @@ body {
 }
 
 #info_float #info_user #option_user,
-#chat_float #info_chat #option_chat{
+#chat_float #info_chat #option_chat  {
     height: 100%;
     margin-right: 15px;
 }
@@ -93,8 +95,6 @@ body {
     width: 100%;
     height: 50px;
     padding: 5px;
-    /* margin: 5px auto;
-    border-radius: 20px; */
 }
 
 #info_float #search_input button {
@@ -112,15 +112,44 @@ body {
     border: 1px solid #E5E5E6;
 }
 
-#info_float #name_contacts {
+#info_float #info_contacts {
     width: 100%;
-    height: calc(100% - 180px);
+    height: calc(100% - 190px);
     background-color: #FFFFFF;
     overflow-y: scroll;
 }
 
-#info_float #name_contacts ul li {
+#info_float #info_contacts .contact {
     list-style: none;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #e5e5e6;
+}
+
+#info_float #info_contacts .contact:hover {
+    background-color: #F5F5F5;
+}
+
+.active {
+    background-color: #EBEBEB;
+}
+
+#info_float #info_contacts .contact .avatar_image {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+}
+
+#info_float #info_contacts .contact .avatar_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#info_float #info_contacts .contact .last_date {
+    color: grey;
+    font-size: 0.6em;
+    align-self: flex-end;
 }
 
 #chat_float {
@@ -134,9 +163,15 @@ body {
     background-color: #EDEDED;
 }
 
+#chat_float #info_chat #contact_avatar_current .user-name .last_date {
+    color: grey;
+    font-size: 0.7em;
+}
+
 #chat_float #chat_window {
     width: 100%;
-    height: calc(100% - 110px);
+    padding: 20px;
+    height: calc(100% - 120px);
     background-image: url("../img/background_chat.png");
     background-position: top;
     background-repeat: repeat-y;
@@ -144,12 +179,60 @@ body {
     overflow-y: scroll;
 }
 
+#chat_float #chat_window #boxMessage {
+    position: relative;
+    max-width: 40%;
+    padding: 8px;
+    margin: 5px;
+}
+
+.messageReceived {
+    background-color: #FFFFFF;
+    border-radius: 0 15px 15px 15px;
+}
+.messageSent {
+    align-self: end;
+    background-color: #DCF8C6;
+    border-radius: 15px 0 15px 15px;
+}
+
+#chat_float #chat_window #boxMessage #contentMessage #dateMessage {
+    align-self: end;
+    color: grey;
+    font-size: 0.6em;
+    margin-top: 3px;
+}
+
+#chat_float #chat_window #boxMessage #contentMessage i {
+    padding-left: 5px;
+}
+
+#options-message {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #F5F5F5;
+    z-index: 2; 
+    border-radius: 10px;
+    display:none;
+}
+
+#options-message ul li {
+    padding: 5px;
+    cursor: pointer; 
+}
+
+#options-message ul li:hover {
+    background-color: #EBEBEB;
+    border-radius: 10px;
+}
+
+
 #chat_float #input_user_chat {
     width: 100%;
     height: 60px;
-    background-color: #F0F0F0;
+    background-color: #EDEDED;
     border: 1px solid #E5E5E6;
-
 }
 
 #chat_float #input_user_chat #emojy,
@@ -163,7 +246,7 @@ body {
 #chat_float #info_chat #option_chat button{
     font-size: 1.2em;
     border: none;
-    background-color: #F0F0F0;
+    background-color: #EDEDED;
     color: rgb(187, 182, 182);
     margin: 7px;
     padding: 5px;
@@ -183,8 +266,6 @@ body {
     font-size: 15px;
     border: none
 }
-
-
 
 
 
